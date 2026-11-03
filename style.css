@@ -1,0 +1,83 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+/* Main Heading */
+h1 {
+    color: white;
+    font-size: 42px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Start Quiz Button */
+button {
+    background: #ffffff;
+    color: #764ba2;
+    border: none;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #764ba2;
+    color: white;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+/* Quiz Result */
+#result {
+    background: white;
+    color: #333;
+    padding: 20px 30px;
+    border-radius: 15px;
+    font-size: 22px;
+    text-align: center;
+    max-width: 100%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    overflow-wrap: anywhere;
+    min-height: 30px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    button {
+        padding: 12px 28px;
+        font-size: 16px;
+    }
+
+    #result {
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+}
